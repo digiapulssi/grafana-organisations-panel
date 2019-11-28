@@ -1,1 +1,1 @@
-<div class="organisation-btns"><div class="organisation-btn-container" ng-repeat="organisation in ctrl.organisationList track by $index"><a class="organisation-btn" ng-href="{{ ctrl.baseURL }}/profile/switch-org/{{ organisation.id }}" target="_self">{{ organisation.name }}</a></div></div>
+<div class="organisation-btns"><div class="organisation-btn-container" ng-repeat="organisation in ctrl.organisationList track by $index"><a class="organisation-btn" ng-href="{{ ctrl.baseURL }}/?orgId={{ organisation.id }}" target="_self">{{ organisation.name }}</a></div></div>
