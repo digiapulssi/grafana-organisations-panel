@@ -1,7 +1,7 @@
 # Organisations Panel Plugin for Grafana
 This is a panel plugin for [Grafana](http://grafana.org/). It shows all organizations that user belongs to as navigable links.
 
-To understand what is a plugin, read the [Grafana's documentation about plugins](http://docs.grafana.org/plugins/development/).
+To understand what is a plugin, read the [Grafana's documentation about plugins](https://grafana.com/docs/grafana/latest/plugins/developing/development/).
 
 NOTE: Latest version of this panel works only with Grafana >=5.0. Use older panel version with older Grafana version.
 
