@@ -31,7 +31,16 @@ class OrganisationsCtrl extends PanelCtrl {
         this.backendSrv = backendSrv;
         this.organisationList = [];
         // Store the URL part before dashboard definition as baseURL
-        this.baseURL = window.location.href.split("/d/")[0];
+        let baseURL = '';
+        if (window.location.href.indexOf("/d/") > -1) {
+            baseURL = window.location.href.split("/d/")[0];
+        } else {
+            baseURL = window.location.href;
+            if (baseURL.indexOf("?") > -1) {
+                baseURL = baseURL.split("?")[0];
+            }
+        }
+        this.baseURL = baseURL;
         // Load organizations for current user
         this.loadOrganisations();
     }

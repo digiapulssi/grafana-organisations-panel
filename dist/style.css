@@ -3,7 +3,7 @@
 
 .organisation-btn-container {
   display: inline-block;
-  margin-right: 10px; }
+  margin: 0 10px 15px 0; }
 
 a.organisation-btn {
   padding: 5px;
